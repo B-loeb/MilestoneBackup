@@ -40,7 +40,7 @@ export default class Ball{
     update(delta, paddleRects) {
         this.x += this.direction.x * this.velocity * delta
         this.y += this.direction.y * this.velocity * delta
-        this.velocity == increaseVelocity * delta
+        this.velocity += increaseVelocity * delta
         const rect = this.rect()
 
         if(rect.bottom >= window.innerHeight || rect.top <= 0){
